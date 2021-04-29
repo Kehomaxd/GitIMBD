@@ -34,7 +34,7 @@ export class Professional{
     }
 
     print(){
-        console.log(`Name: ${this.name}\nAge: ${this.age}\nGenre: ${this.genre}\nWeigth: ${this.weigth}\nHeigth: ${this.heigth}\nHair Color: ${this.hairColor}\nEye Color: ${this.eyeColor}\nRace: ${this.race}\nRetired: ${this.isRetired}\nNationality: ${this.nationality}\nOscars wins: ${this.oscarsNum}\nProfession: ${this.profession}`);
+        console.log(` Name: ${this.name}\n Age: ${this.age}\n Genre: ${this.genre}\n Weigth: ${this.weigth}\n Heigth: ${this.heigth}\n Hair Color: ${this.hairColor}\n Eye Color: ${this.eyeColor}\n Race: ${this.race}\n Retired: ${this.isRetired}\n Nationality: ${this.nationality}\n Oscars wins: ${this.oscarsNum}\n Profession: ${this.profession}`);
     }
 
 }

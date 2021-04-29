@@ -1,10 +1,10 @@
 import {Professional} from "./professional"
 
-class Movie{
+export class Movie{
 
     //Atributos
     public title:string;
-    public releaseYear:string;
+    public releaseYear:number;
     public actors:Professional[];
     public nacionality:string;
     public director:Professional;
@@ -18,7 +18,7 @@ class Movie{
     public genre:string;
 
     //Constructor
-    constructor(title:string,releaseYear:string,nacionality:string,genre:string){
+    constructor(title:string,releaseYear:number,nacionality:string,genre:string){
 
         this.title=title;
         this.releaseYear=releaseYear;
@@ -37,9 +37,16 @@ class Movie{
 
     //Metodos
     public print():void{
-        console.log(`Title: ${this.title}\nReleaseYear: ${this.releaseYear}\nActors: ${this.actors}\nNacionality: ${this.nacionality}\n
-        Directo: ${this.director}\nWriter: ${this.writer}\nLanguage: ${this.language}\nPlataform: ${this.plataform}\nisMCU: ${this.isMCU}\n
-        MainCharacterName: ${this.mainCharacterName}\nProducer: ${this.producer}\nDistributor: ${this.distributor}\nGenre: ${this.genre}`)
+        console.log(`Title: ${this.title}\nReleaseYear: ${this.releaseYear}\nActors:`);
+        for(let i=0;i<this.actors.length;i++){
+        this.actors[i].print();
+        console.log(" ")
+        }
+        console.log(`Nacionality: ${this.nacionality}\nDirector:`);
+        this.director.print();
+        console.log(`Writer: `)
+        this.writer.print();
+        console.log(`Language: ${this.language}\nPlataform: ${this.plataform}\nisMCU: ${this.isMCU}\nMainCharacterName: ${this.mainCharacterName}\nProducer: ${this.producer}\nDistributor: ${this.distributor}\nGenre: ${this.genre}\n`)
     }
 
 
