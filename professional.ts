@@ -1,7 +1,7 @@
 //@kehomaxd
 
 
-export class professional{
+export class Professional{
 
     public name:string;
     public age:number;
@@ -34,7 +34,7 @@ export class professional{
     }
 
     print(){
-        console.log(`Name: ${this.name}\nAge: ${this.age}\nGenre: ${String}\nWeigth: ${this.weigth}\nHeigth: ${this.heigth}\nHair Color: ${this.hairColor}\nEye Color: ${this.eyeColor}\Race: ${this.race}\nRetired: ${this.isRetired}\nNationality: ${this.nationality}\nOscars wins: ${this.oscarsNum}\n Profession: ${this.profession}`);
+        console.log(`Name: ${this.name}\nAge: ${this.age}\nGenre: ${String}\nWeigth: ${this.weigth}\nHeigth: ${this.heigth}\nHair Color: ${this.hairColor}\nEye Color: ${this.eyeColor}\Race: ${this.race}\nRetired: ${this.isRetired}\nNationality: ${this.nationality}\nOscars wins: ${this.oscarsNum}\nProfession: ${this.profession}`);
     }
 
 }
