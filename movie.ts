@@ -22,16 +22,7 @@ export class Movie{
 
         this.title=title;
         this.releaseYear=releaseYear;
-        this.actors;
         this.nacionality=nacionality;
-        this.director;
-        this.writer;
-        this.language;
-        this.plataform;
-        this.isMCU;
-        this.mainCharacterName;
-        this.producer;
-        this.distributor;
         this.genre=genre;
     }
 
